@@ -53,7 +53,7 @@ void loop(){
   Humidity = dht.readHumidity();
 
   if (currentMillis - previousMillis >= interval) {   
-    //Print temp and humidity values to serial monitor
+    //
     Serial.print("Temperature: ");
     Serial.print(Temperature);
     Serial.print(" Celsius, Humidity: ");
