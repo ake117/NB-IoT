@@ -1,5 +1,5 @@
 /*
- * Try send both Temperature and Humidity using Node-Red, Node-Red UI and UDP server
+ * Send both Temperature and Humidity from DHT11 by using Node-Red, Node-Red UI and UDP server
  * 03 June 2018
  */
 
@@ -7,8 +7,8 @@
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 
-String serverIP = "172.245.105.173"; // Your Server IP
-String serverPort = "5656"; // Your Server Port
+String serverIP = "0.0.0.0"; // Your Server UDP IP
+String serverPort = "5656"; // Your Server UDP Port
 
 char jsonData[] = "{\"temperature\":%d, \"humidity\":%d }\0";
 char buff[48];
